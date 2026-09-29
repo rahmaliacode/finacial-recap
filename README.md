@@ -1,14 +1,14 @@
 # Arus — catatan keuangan pribadi
 
-Aplikasi sederhana untuk mencatat transaksi melalui kalimat bahasa Indonesia, meninjau kategori otomatis, dan melihat laporan bulanan berisi ringkasan, rincian kategori, serta daftar transaksi. Versi tanpa login menyimpan transaksi di penyimpanan browser perangkat ini.
+Catat pemasukan dan pengeluaran lewat kalimat bahasa Indonesia, lalu lihat laporan bulanan beserta rincian kategori. Data disimpan per akun di Supabase; situs gratis di GitHub Pages.
 
 ## Jalankan
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Data tidak tersinkron ke perangkat lain. Gunakan tombol unduh cadangan secara rutin; file JSON hasilnya dapat dipulihkan lewat tombol di sebelahnya. Menghapus data browser juga menghapus catatan di perangkat ini.
+Untuk daftar dan langsung masuk tanpa verifikasi email, atur Supabase Dashboard → Authentication → Sign In / Providers → Email → **Confirm Email: off**. Proyek saat ini: `lcvrfgvhoiucotzzbfks`. Pastikan Email provider dan pendaftaran pengguna aktif. Saat mode ini digunakan, pemilik alamat email tidak diverifikasi; jangan gunakan alamat orang lain. Tanpa akses email, reset kata sandi tidak tersedia.
 
-Database Supabase dari versi awal tetap tersedia, tetapi tidak digunakan selama mode tanpa login. Skemanya ada di `supabase/migrations/20260928071600_create_personal_transactions.sql`. Parser transaksi berjalan di browser tanpa layanan AI eksternal; kategori dapat diubah sebelum disimpan.
+Catatan lama dari versi browser dapat diimpor ketika pertama kali masuk di perangkat yang sama. JSON cadangan juga dapat diimpor melalui tombol unggah. Riwayat bulanan ada di menu Laporan bulanan. Parser kategori berjalan di browser tanpa layanan AI eksternal.
