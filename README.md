@@ -1,6 +1,6 @@
 # Arus — catatan keuangan pribadi
 
-Aplikasi sederhana untuk mencatat transaksi melalui kalimat bahasa Indonesia, meninjau kategori otomatis, dan melihat rekap bulanan. Versi tanpa login menyimpan transaksi di penyimpanan browser perangkat ini.
+Aplikasi sederhana untuk mencatat transaksi melalui kalimat bahasa Indonesia, meninjau kategori otomatis, dan melihat laporan bulanan berisi ringkasan, rincian kategori, serta daftar transaksi. Versi tanpa login menyimpan transaksi di penyimpanan browser perangkat ini.
 
 ## Jalankan
 
